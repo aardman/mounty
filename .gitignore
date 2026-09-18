@@ -1,0 +1,7 @@
+.build/
+Mounty.app/
+MiniMounty.app/
+Mounty.pkg
+MiniMounty.pkg
+.pkgroot-*/
+.component-*.plist
