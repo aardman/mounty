@@ -1,6 +1,6 @@
 cask "minimounty" do
-  version "1.0.0"
-  sha256 "f54c9602550a481dc9f9a59c8f2997812dcd4c230f6f1c2a96f48f7fcbcd68ab"
+  version "1.1.0"
+  sha256 "423f01d1841f3c7d9349f3fafdfa952ad95cfd01c5ccc81f1884c00797ff668c"
 
   url "https://github.com/aardman/mounty/releases/download/v#{version}/MiniMounty.pkg"
   name "MiniMounty"

@@ -9,7 +9,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 INSTALL_DIR="/Applications"
-VERSION="1.0.0"
+VERSION="1.1.0"
 
 package_app() {
     local name="$1"

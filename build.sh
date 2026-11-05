@@ -47,7 +47,7 @@ build_app() {
 build_app "Mounty" \
     -o "Status Menu" \
     -p /usr/bin/perl \
-    -V "1.0.0" \
+    -V "1.1.0" \
     -I "org.aardman.Mounty" \
     -K "Icon" \
     -L "./hard-drive-white.png" \
@@ -60,7 +60,7 @@ build_app "Mounty" \
 build_app "MiniMounty" \
     -o "None" \
     -p /bin/bash \
-    -V "1.0.0" \
+    -V "1.1.0" \
     -I "org.aardman.MiniMounty" \
     -R \
     miniMounty.sh

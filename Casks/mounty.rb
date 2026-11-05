@@ -1,6 +1,6 @@
 cask "mounty" do
-  version "1.0.0"
-  sha256 "5f02461f36417ea3e119ef127a4ddb4961e1c83d8577f23e7514337415eab6b4"
+  version "1.1.0"
+  sha256 "46b0ae09aed3343b353e250a7f2864dfdc3594f2cc891b26d8b171ebf2f8a9e9"
 
   url "https://github.com/aardman/mounty/releases/download/v#{version}/Mounty.pkg"
   name "Mounty"
