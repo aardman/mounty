@@ -5,3 +5,4 @@ Mounty.pkg
 MiniMounty.pkg
 .pkgroot-*/
 .component-*.plist
+.DS_Store
