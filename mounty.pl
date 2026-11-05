@@ -18,12 +18,12 @@ my @shares = (
 
 # If 0 arguments, we show the menu
 if (!scalar(@ARGV)) {
+    print "Mount Custom Share...\n";
+    print "----\n";
     for my $share (@shares) {
         my ($label, $url) = @$share;
         print defined($url) ? "$label\n" : "DISABLED|$label\n";
     }
-    print "----\n";
-    print "Mount Custom Share...\n";
 } else {
     # We get the menu title as an argument
     my $menu_choice = $ARGV[0];

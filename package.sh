@@ -29,7 +29,11 @@ package_app() {
     # installer silently installs THERE instead of --install-location.
     # Disable that so it always goes to the path we ask for.
     pkgbuild --analyze --root ".pkgroot-$name" ".component-$name.plist"
-    /usr/libexec/PlistBuddy -c "Set :0:BundleIsRelocatable false" ".component-$name.plist"
+    # Depending on the macOS/pkgbuild version, the generated plist may or
+    # may not already have this key - Delete-then-Add handles both cases
+    # (Set fails outright if the key isn't already there).
+    /usr/libexec/PlistBuddy -c "Delete :0:BundleIsRelocatable" ".component-$name.plist" 2>/dev/null || true
+    /usr/libexec/PlistBuddy -c "Add :0:BundleIsRelocatable bool false" ".component-$name.plist"
 
     pkgbuild \
         --root ".pkgroot-$name" \
